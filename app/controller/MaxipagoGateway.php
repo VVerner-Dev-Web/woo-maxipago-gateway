@@ -5,10 +5,10 @@
  */
 class MaxipagoGateway extends WC_Payment_Gateway
 {
-  public const ID             = 'maxipago';
+  public const ID = 'maxipago';
 
-  private $app                = null;
-  private $api                = null;
+  private $app  = null;
+  private $api  = null;
 
   public function __construct()
   {
