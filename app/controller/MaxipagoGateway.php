@@ -3,19 +3,14 @@
 /**
  * @SuppressWarnings(PHPMD.CamelCaseMethodName:)
  */
-class MaxipagoGateway extends WC_Payment_Gateway
+abstract class MaxipagoGateway extends WC_Payment_Gateway
 {
-  public const ID = 'maxipago';
-
   private $app  = null;
   private $api  = null;
 
   public function __construct()
   {
-    $this->id                  = self::ID;
     $this->has_fields          = true;
-    $this->method_title        = 'Maxipago';
-    $this->method_description  = 'Realize cobranças através de cartão de crédito ou boleto usando o gateway Maxipago';
     $this->supports            = ['products'];
 
     $this->setFormFields();

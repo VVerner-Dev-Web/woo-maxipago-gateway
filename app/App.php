@@ -19,7 +19,8 @@ class MaxipagoApp
 
   public function enqueueGateway(array $methods): array
   {
-    $methods[] = 'MaxipagoGateway';
+    $methods[] = 'MaxipagoCreditCardGateway';
+    $methods[] = 'MaxipagoBankSlipGateway';
     return $methods;
   }
 
@@ -59,7 +60,10 @@ class MaxipagoApp
     require_once MAXIPAGO_APP . "/controller/maxipago-sdk/maxipago/ServiceBase.php";
     require_once MAXIPAGO_APP . "/controller/maxipago-sdk/maxipago/ResponseBase.php";
     require_once MAXIPAGO_APP . '/controller/maxipago-sdk/maxiPago.php';
+
     require_once MAXIPAGO_APP . '/controller/MaxipagoGateway.php';
+    require_once MAXIPAGO_APP . '/controller/MaxipagoCreditCardGateway.php';
+    require_once MAXIPAGO_APP . '/controller/MaxipagoBankSlipGateway.php';
   }
 
   public function loadWoocommerceMissingNotice(): void
