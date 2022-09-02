@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') || exit;
 
 /**
  * Plugin Name:           Maxipago Gateway
@@ -11,5 +11,11 @@
  * WC tested up to:       6.8.2
  * Requires at least:     5.6
  * Tested up to:          6.0.2
- * Requires PHP:          7.1
+ * Requires PHP:          7.2
  */
+
+define('MAXIPAGO_VERSION', '0.0.1');
+define('MAXIPAGO_FILE', __FILE__);
+define('MAXIPAGO_APP', __DIR__ . '/app');
+
+require_once MAXIPAGO_APP . '/App.php';
