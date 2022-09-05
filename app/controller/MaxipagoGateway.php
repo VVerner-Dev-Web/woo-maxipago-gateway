@@ -80,7 +80,7 @@ abstract class MaxipagoGateway extends WC_Payment_Gateway
       'billingPostalCode' => $order->get_billing_postcode(),
       'billingCountry'    => $order->get_billing_country(),
       'billingEmail'      => $order->get_billing_email(),
-
+      'customerIdExt'     => $order->get_customer_id(),
     ];
   }
 
