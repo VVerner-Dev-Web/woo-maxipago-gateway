@@ -1,7 +1,7 @@
 <?php defined('ABSPATH') || exit; ?>
 
-<fieldset id="wc-maxipago-cc-form" class="wc-credit-card-form wc-payment-form" style="background:transparent;">
-  <?php do_action('woocommerce_credit_card_form_start', 'maxipago'); ?>
+<fieldset id="wc-maxipago-credit_card-form" class="wc-credit-card-form wc-payment-form" style="background:transparent;">
+  <?php do_action('woocommerce_maxipago-credit_card_form_start', 'maxipago-credit_card'); ?>
 
   <p class="form-row form-row-wide">
     <label for="maxipago_ccName"> Nome impresso no cartão </label>
@@ -40,7 +40,7 @@
 
   <div class="clear"></div>
 
-  <?php do_action('woocommerce_credit_card_form_end', 'maxipago'); ?>
+  <?php do_action('woocommerce_maxipago-credit_card_form_end', 'maxipago-credit_card'); ?>
 
   <div class="clear"></div>
 </fieldset>

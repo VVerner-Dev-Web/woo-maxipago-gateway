@@ -6,16 +6,17 @@ jQuery(function ($) {
   })
 
   $(document).on('change', '#maxipago_expdate', function(e) {
-    const value = '01/' + $(this).val();
+    const value = $(this).val();
+    const dmyDate = '01/' + $(this).val();
 
     if (!value) {
       return;
     }
 
-    const date  = value.split('/').reverse().join('-');
+    const ymdDate  = dmyDate.split('/').reverse().join('-');
 
-    if (!isValidDate(date)) {
-      alert('Por favor, preencha uma data de vencimento válida para o cartão. A data '+ $(this).val() +' é inválida.');
+    if (!isValidDate(ymdDate)) {
+      alert('Por favor, preencha uma data de vencimento válida para o cartão. A data '+ value +' é inválida.');
       $('#maxipago_expdate').val('');
     }
   })
