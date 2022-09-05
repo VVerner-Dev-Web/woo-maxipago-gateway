@@ -2,6 +2,8 @@
 
 /**
  * @SuppressWarnings(PHPMD.CamelCaseMethodName:)
+ * @SuppressWarnings(PHPMD.CamelCasePropertyName:)
+ * @SuppressWarnings(PHPMD.ShortVariable:)
  */
 class MaxipagoCreditCardGateway extends MaxipagoGateway
 {

@@ -2,6 +2,8 @@
 
 /**
  * @SuppressWarnings(PHPMD.CamelCaseMethodName:)
+ * @SuppressWarnings(PHPMD.CamelCasePropertyName:)
+ * @SuppressWarnings(PHPMD.ShortVariable:)
  */
 abstract class MaxipagoGateway extends WC_Payment_Gateway
 {
