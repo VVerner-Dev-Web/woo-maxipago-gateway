@@ -76,6 +76,7 @@ class MaxipagoBankSlipGateway extends MaxipagoGateway
       return null;
     endif;
 
+    $order->add_order_note('MAXIPAGO: Código da transação ' . $bankSlip['transactionID'], false);
     $order->add_order_note('MAXIPAGO: Boleto gerado. Disponível em: ' . $bankSlip['boletoUrl'], false);
     $order->add_meta_data(self::URL_META_KEY, $bankSlip['boletoUrl'], true);
     $order->set_status('on-hold');
