@@ -5,7 +5,7 @@
  * Description:           Integra o gateway de pagamento Maxipago ao WooCommerce
  * Author:                VVerner
  * Author URI:            https://vverner.com
- * Version:               0.0.1
+ * Version:               1.0.0
  * License:               GPLv3 or later
  * WC requires at least:  6.5
  * WC tested up to:       6.8.2
@@ -14,7 +14,7 @@
  * Requires PHP:          7.2
  */
 
-define('MAXIPAGO_VERSION', '0.0.1');
+define('MAXIPAGO_VERSION', '1.0.0');
 define('MAXIPAGO_FILE', __FILE__);
 define('MAXIPAGO_APP', __DIR__ . '/app');
 
